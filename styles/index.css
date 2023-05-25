@@ -1,0 +1,53 @@
+
+    
+    main{
+        display: grid;
+        grid-template-columns:300px 300px 300px ;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-areas: "k j i"
+                             "k g h"
+                              "f e d"
+                         "c c b"
+                         "a a b";
+    gap: 30px;
+}
+article{
+    border: 30px ridge red;
+}
+
+    article:nth-last-of-type(1){
+        grid-area: a;
+    }
+    article:nth-last-of-type(2){
+        grid-area: b;
+    }
+    article:nth-last-of-type(3){
+        grid-area: c;
+    }
+    article:nth-last-of-type(4){
+        grid-area:d;
+    }
+    article:nth-last-of-type(5){
+        grid-area: e;
+    }
+    article:nth-last-of-type(6){
+        grid-area: f;
+    }
+    article:nth-last-of-type(7){
+        grid-area: g;
+    }
+    article:nth-last-of-type(8){
+        grid-area: h;
+    }
+    article:nth-last-of-type(9){
+        grid-area: i;
+    }
+    article:nth-last-of-type(10){
+        grid-area:j;
+    }
+    article:nth-last-of-type(11){
+        grid-area: k;
+    }
+
+    
+    
