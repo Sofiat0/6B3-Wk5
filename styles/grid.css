@@ -1,0 +1,35 @@
+main{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 400px 400px 300px;
+grid-template-areas: "a a b"
+                     "f e c"
+                     "d d d";
+gap: 30px;
+}
+section{
+     border: 15px ridge blue;
+}
+
+section:nth-last-of-type(1){
+    grid-area: a;
+}
+section:nth-last-of-type(2){
+    grid-area: b;
+}
+section:nth-last-of-type(3){
+    grid-area: c;
+}
+section:nth-last-of-type(4){
+    grid-area:d;
+}
+section:nth-last-of-type(5){
+    grid-area: e;
+}
+section:nth-last-of-type(6){
+    grid-area: f;
+}
+
+body h2{
+    color: blue;
+}
